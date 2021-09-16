@@ -1,0 +1,302 @@
+/*
+	@name invoice
+*/
+/* Only edit this if you know what you are doing! */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; }
+
+/* Only edit this if you know what you are doing! */
+#img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+/* div { position: absolute; } */
+
+/* #content-container { display: flex;  margin-left: auto; margin-right: auto;  } */
+
+/* #content-container > div{ top:inherit; } */
+/* #page_invoice_ek1 {
+	width: 595px;
+	height: 842px;
+} */
+
+/* #_bg__invoice_ek2 {
+
+	width: 595px;
+	height: 842px;
+	background:rgba(255,255,255,255);
+} */
+
+#header_content {
+	display: flex;
+
+}
+
+#bar {
+	width: 100%;
+	height: 3px;
+    margin-bottom: 10px;
+	background:rgba(42,78,142,255);
+}
+
+
+#logo {
+	width: 71px;
+	height: 71px;
+}
+
+.divInfo{
+    width: 100%;
+}
+.divLogo{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+#nama_cv {
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	color:#2a4e8e;
+    margin-bottom: 4px;
+}
+
+
+#alamat {
+	width: 116px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 8px;
+	text-align: left;
+	color:#2a4e8e;
+    margin-bottom: 3px;
+}
+
+
+#nomor {
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 9px;
+	text-align: left;
+	color:#2a4e8e;
+}
+
+
+#invoice_ek3 {
+    width:100%;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color:#2a4e8e;
+}
+
+
+#tanggal {
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 12px;
+	text-align: left;
+	color:#2a4e8e;
+}
+
+#content_info {
+	width: 100%;
+    margin-top: 10px;
+}
+
+#title_bg_tagihan {
+	opacity:0.3216;
+	height: 30px;
+	background:rgba(42,78,142,82);
+    margin-bottom: 20px;
+}
+
+
+#title_tagihan {
+	width: 150px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 14px;
+	font-weight: bold;
+    margin-top : 5px ;
+    margin-left: 5px;
+	text-align: left;
+	color:#000000;
+}
+#title_penawaran {
+	width: 150px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 14px;
+	font-weight: bold;
+    margin-top : 5px ;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	color:#000000;
+}
+
+
+#title_bg_ket {
+	opacity:0.3216;
+    height: 30px;
+	background:rgba(42,78,142,82);
+}
+
+
+#title_ket {
+	width: 150px;
+	overflow: hidden;
+    margin-top : 5px ;
+    margin-left: 5px;
+	font-family: Segoe UI;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+}
+
+
+#nama_client {
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left;
+	color:#000000;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom : 10px;
+}
+
+
+#alamat_client {
+	width: 245px;
+	height: 68.5px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 11px;
+	font-weight: lighter;
+	text-align: left;
+	color:#000000;
+    margin-left:5px;
+    margin-top:5px;
+}
+#ket_penawaran {
+	width: 100%;
+	height: 68.5px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 11px;
+	font-weight: lighter;
+	text-align: left;
+	color:#000000;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+
+#ket {
+
+	width: 178px;
+	height: 43px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 10px;
+	font-weight: lighter;
+	text-align: left;
+	color:#000000;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+
+#nama {
+	width: 192px;
+	height: 66.5px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 11px;
+	text-align: left;
+	color:#000000;
+    margin-left:5px;
+    margin-top:5px;
+}
+
+
+
+#table_group {
+	opacity:0.3216;
+	width: 100%;
+    margin-top:10px;
+    margin-bottom: 20px;
+	background:rgba(42,78,142,0);
+    border: 10px;
+
+}
+
+
+#title_bg_deskripsi {
+	opacity:0.3216;
+	width: 100%;
+    background: #E0E0E0;
+    padding : 2px;
+    margin-bottom: 10px;
+}
+
+
+#title_deskripsi {
+	width: 300px;
+	overflow: hidden;
+	font-family: Segoe UI;
+	font-size: 14px;
+	font-weight: 900;
+	text-align: left;
+	color:#000000;
+    margin-left:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+table{
+    border: 1 solid black;
+}
+table.desk_table {
+    border: 0px solid #1C6EA4;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.desk_table td, table.desk_table th {
+    border: 0px solid #AAAAAA;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  table.desk_table tbody td {
+    font-size: 11px;
+  }
+  table.desk_table thead {
+    background: #E0E0E0;
+  }
+  table.desk_table thead th {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    background:rgba(42,78,142,82);
+    text-align: left;
+    border:0;
+  }
+  table.desk_table tfoot {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+
+  }
+  table.desk_table tfoot td {
+    font-size: 12px;
+    /* background:rgba(42,78,142,82); */
+  }
+/* Add your custom CSS here */
