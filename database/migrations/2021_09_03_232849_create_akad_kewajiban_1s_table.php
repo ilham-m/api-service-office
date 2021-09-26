@@ -14,6 +14,7 @@ class CreateAkadKewajiban1sTable extends Migration
     public function up()
     {
         Schema::create('akad_kewajiban_1s', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('nomor_akad');
             $table->string('urutan');

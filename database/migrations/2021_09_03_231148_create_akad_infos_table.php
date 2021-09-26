@@ -15,6 +15,7 @@ class CreateAkadInfosTable extends Migration
     {
         Schema::create('akad_infos', function (Blueprint $table) {
             // _2 = pihak ke 2
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('nomor_akad');
             $table->string('nama');
@@ -27,6 +28,7 @@ class CreateAkadInfosTable extends Migration
             $table->string('perjanjian');
             $table->string('jangka_waktu');
             $table->string('tempat_tanggal');
+            $table->string('nominal_jasa');
             $table->timestamps();
         });
     }

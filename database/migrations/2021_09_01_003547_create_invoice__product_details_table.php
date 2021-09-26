@@ -14,6 +14,7 @@ class CreateInvoiceProductDetailsTable extends Migration
     public function up()
     {
         Schema::create('invoice__product_details', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('invoice');
             $table->string('urutan');

@@ -9,6 +9,10 @@ class akad_objek extends Model
 {
     use HasFactory;
     public $fillable = [
-        'nomor_akad','objek_perjanjian','ket_objek','urutan'
+        'nomor_akad','objek_perjanjian','subjek_perjanjian','ket_objek','urutan'
+    ];
+
+    protected $casts = [
+        'urutan' => 'integer',
     ];
 }

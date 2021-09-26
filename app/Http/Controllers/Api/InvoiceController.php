@@ -17,7 +17,7 @@ class InvoiceController extends Controller
         // dd($date);
         $data_detail = invoice_ProductDetail::all();
         $data_info = invoice_info::all();
-        $latestInvoice = invoice_info::orderByDesc('id')->FirstOrFail();
+        $latestInvoice = invoice_info::orderByDesc('id')->first();
         return $this->success(['latest_invoice'=>$latestInvoice,'info_tagihan'=>$data_info,'detail_tagihan'=>$data_detail], 'Data Invoice');
     }
     public function store(Request $request,invoice_ProductDetail $produk,invoice_info $info){
@@ -70,13 +70,15 @@ class InvoiceController extends Controller
 
         $tagihanData = $request->input();
         $urutan = 0;
+        $produkUpdate = $produk->where('invoice','=',$invoice)->delete();
         foreach($tagihanData['tagihan'] as $key => $value){
             $urutan++;
-            $produkUpdate = $produk->where('invoice','=',$invoice)->where('urutan','=',$urutan)->FirstOrFail();
-          $produkUpdate->update([
-              'tagihan'=> $value['tagihan'],
-              'deskripsi_tagihan' => $value['deskripsi_tagihan'],
-          ]);
+            invoice_ProductDetail::create([
+                'invoice' => $invoice,
+                'urutan' => $urutan,
+                'tagihan'=> $value['tagihan'],
+                'deskripsi_tagihan' => $value['deskripsi_tagihan'],
+            ]);
         }
         return $this->success(['info'=>'update sukses','detail'=>'update sukses'], 'sukses menyimpan data');
     }

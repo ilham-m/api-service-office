@@ -14,10 +14,12 @@ class CreateInfoPerusahaansTable extends Migration
     public function up()
     {
         Schema::create('info_perusahaans', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('nama_perusahaan');
             $table->string('alamat');
             $table->string('phone');
+            $table->string('logo');
             $table->timestamps();
         });
     }

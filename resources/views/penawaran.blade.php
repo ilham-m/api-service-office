@@ -16,14 +16,14 @@
                     <div id="header_content" class="divInfo">
                         <div class="divLogo">
                             <div align="left" style="width: 15%;float: left;">
-                                <img src="images/logo.png" id="logo"/>
+                                <img src="images/{{$info_perusahaan['logo']}}" id="logo"/>
                             </div>
-                            <div align="left" style="width: 50%;float: left;">
+                            <div align="left" style="width: 55%;float: left;">
                                 <div id="nama_cv" >{{ $info_perusahaan['nama_perusahaan'] }}</div>
                                 <div id="alamat" >{{ $info_perusahaan['alamat'] }}</div>
                                 <div id="nomor" >Telepon : {{ $info_perusahaan['phone'] }}</div>
                             </div>
-                            <div style="float: right;">
+                            <div style="float: right;align:right;">
                                 <div id="invoice_ek3" >No : {{$info['no_surat_penawaran']}}</div>
                                 <div id="tanggal" >Tanggal : {{$info['tanggal']}}</div>
                         </div>
@@ -136,13 +136,13 @@
                         </div>
                     </div> -->
                     <div align="right" style="width: 25%;float: right;">
-                        <div id="ket" style="margin-bottom:40px;">
+                        <div id="ket" style="margin-bottom:73px;">
                             Hormat Kami
                         </div>
-                        <div style="font-size:10px;margin-bottom:0;width:50%;">Deni Nur Irawan<hr></div>
-
+                        <div style="width:75%;"><hr></div>
 
                     </div>
+
 
                 </div>
             </div>

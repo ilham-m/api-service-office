@@ -9,6 +9,6 @@ class info_perusahaan extends Model
 {
     use HasFactory;
     public $fillable = [
-        'nama_perusahaan','alamat','phone'
+        'nama_perusahaan','alamat','phone','logo'
     ];
 }

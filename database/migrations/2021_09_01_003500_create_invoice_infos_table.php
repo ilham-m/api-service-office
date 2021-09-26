@@ -14,6 +14,7 @@ class CreateInvoiceInfosTable extends Migration
     public function up()
     {
         Schema::create('invoice_infos', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('invoice');
             $table->string('nama');

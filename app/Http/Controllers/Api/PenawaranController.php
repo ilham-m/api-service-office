@@ -63,13 +63,15 @@ class PenawaranController extends Controller
             'ket_penawaran' => request('ket_penawaran'),
         ]);
         $data = request()->input();
+        $detail = $detail->where('no_surat_penawaran','=',$no_surat_penawaran)->delete();
         $urutan = 0;
         foreach($data['penawaran'] as $key => $value){
             $urutan++;
-            $detail = $detail->where('no_surat_penawaran','=',$no_surat_penawaran)->where('urutan','=',$urutan)->FirstOrFail();
-            $detail->update([
+            penawaran_detail::create([
+                'no_surat_penawaran' => $no_surat_penawaran,
                 'penawaran' => $value['penawaran'],
                 'harga' => $value['harga'],
+                'urutan'=>$urutan,
             ]);
         }
         return $this->success(['info_penawaran'=>$info,'detail_penawaran'=>$detail], 'Data Penawaran Berhasil diperbarui');

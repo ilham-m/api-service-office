@@ -85,4 +85,8 @@ class AuthController extends Controller
     // return response()->json(['token' => $user->createToken($user->name)->plainTextToken]);
     return $this->success(['data' => ['user' => $user, 'token' => $user->createToken($user->name)->plainTextToken] ]);
     }
+
+    public function check(){
+        return $this->success(['User Still Has access'], 'Data user profile');
+    }
 }

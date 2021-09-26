@@ -20,5 +20,6 @@ class akad_info extends Model
         'perjanjian',
         'jangka_waktu',
         'tempat_tanggal',
+        'nominal_jasa',
     ];
 }

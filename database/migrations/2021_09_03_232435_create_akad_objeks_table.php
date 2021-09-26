@@ -14,11 +14,13 @@ class CreateAkadObjeksTable extends Migration
     public function up()
     {
         Schema::create('akad_objeks', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('nomor_akad');
-            $table->string('urutan');
+            $table->integer('urutan');
             $table->string('objek_perjanjian');
-            $table->string('ket_objek');
+            $table->string('subjek_perjanjian');
+            $table->text('ket_objek');
             $table->timestamps();
         });
     }

@@ -29,6 +29,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('auth/logout', [AuthController::class, 'logout']);
 
+    Route::get('auth/check', [AuthController::class, 'check']);
+
     Route::Resource('/penawaran', PenawaranController::class);
 
     Route::Resource('/info-perusahaan', InfoPerusahaanController::class);
@@ -42,3 +44,6 @@ Route::middleware('auth:sanctum')->group(function () {
 
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
+
+Route::get('/get-logo', [InfoPerusahaanController::class, 'logo']);
+Route::get('/get-info', [InfoPerusahaanController::class, 'index']);

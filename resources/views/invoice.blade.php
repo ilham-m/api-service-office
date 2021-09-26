@@ -16,7 +16,7 @@
                     <div id="header_content" class="divInfo">
                         <div class="divLogo">
                             <div align="left" style="width: 15%;float: left;">
-                                <img src="images/logo.png" id="logo"/>
+                                <img src="images/{{$info_perusahaan['logo']}}" id="logo"/>
                             </div>
                             <div align="left" style="width: 50%;float: left;">
                                 <div id="nama_cv" >{{ $info_perusahaan['nama_perusahaan'] }}</div>
@@ -106,16 +106,16 @@
                     </div> -->
 
                     <div align="left" style="width: 60%;float: left;">
-                        <div id="ket" >
-                            Untuk Pembayaran Silahkan Tranfer ke Nomor Rekening di Bawah
+                        <div id="ket" style="margin-bottom:40px;">
+                            Untuk Pembayaran Silahkan Transfer Ke Nomor Rekening Di Bawah Ini
                         </div>
                         <div id="nama" >
                             <span style="color:#000000; font-style:normal; font-weight:bold;margin-bottom:5px;">427-024-522-1<br/></span><span style="color:#000000; font-style:normal;  font-weight:normal; ">A/N DENI NUR IRAWAN<br/></span><span style="color:#000000; font-style:normal; font-weight:normal; ">Bank Central Asia ( BCA )<br/></span>
                         </div>
                     </div>
                     <div align="right" style="width: 25%;float: right;">
-                        <div id="ket" style="margin-bottom:40px;">
-                            Hormat Kami, .........
+                        <div id="ket" style="margin-bottom:73px;">
+                            Hormat Kami
                         </div>
                         <div style="width:75%;"><hr></div>
 

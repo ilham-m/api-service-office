@@ -14,6 +14,7 @@ class CreatePenawaranInfosTable extends Migration
     public function up()
     {
         Schema::create('penawaran_infos', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->string('no_surat_penawaran');
             $table->string('nama');
